@@ -1,0 +1,77 @@
+.menu {
+    width: 84%;
+    height: 30%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-buttons-one button {
+    background-color: rgb(174, 43, 43);
+    font-weight: 300;
+    color: white;
+    height: 30px;
+    width: 80px;
+    margin-right: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px rgb(237, 113, 113);
+    font-family: Orbitron, sans-serif;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.menu-buttons-off button {
+    background-color: rgb(174, 43, 43);
+    font-weight: 300;
+    color: rgb(196, 191, 191);
+    height: 30px;
+    width: 80px;
+    margin-right: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 2px rgb(237, 113, 113); 
+    font-family: Orbitron, sans-serif;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.menu-buttons-one button:active {
+    box-shadow: 0 1px  rgb(237, 113, 113);
+    transform: translateY(2px);
+}
+
+.menu-buttons-one .selected {
+    background: linear-gradient(to bottom, #b4e391 0%,#61c419 50%,#b4e391 100%);;
+    box-shadow: 0 3px rgb(105, 215, 109);
+}
+
+.power-button {
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+    margin-right: 3%;
+    border: none;
+    outline: none;
+    background-color: rgb(174, 43, 43);
+    box-shadow: 0 2px  rgb(237, 113, 113);
+    cursor: pointer;
+}
+
+.power-button:active {
+    box-shadow: 0 1px  rgb(237, 113, 113);
+}
+
+.slider {
+    cursor: pointer;
+}
