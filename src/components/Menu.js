@@ -16,8 +16,7 @@ const Menu = ({
   // Menu component (screen, volume, mode, on/off)
   return (
     <div className="menu">
-      {/* Pass down props to the Screen component */}
-      <Screen audioName={audioName} volume={Number(volume)} on={on} />
+      <Screen audioName={audioName} volume={volume * 1} on={on} />
       <br />
       <label>
         <span>
@@ -36,7 +35,8 @@ const Menu = ({
       </label>
       <br />
       <div className="menu-buttons-container">
-        <div className={on ? "menu-buttons-one" : "menu-buttons-off"}>
+        {/* <div className={on ? "menu-buttons-on" : "menu-buttons-off"}> */}
+        <div className={`menu-buttons ${!on ? "menu-off" : "menu-on"}`}>
           <button
             className={mode === "heater" ? "selected" : null}
             onClick={() => changeMode("heater")}

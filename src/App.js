@@ -52,17 +52,17 @@ function App() {
       const sound = new Audio(item.src);
       return sound;
     });
-    // Information about each sound file/object
-
-    // id: assigned sound id that is looked up if a sound is played
-    // each button is assigned a unique id that corresponds to a sound
-
-    // name: name of the sound (e.g. Heater-1)
-    // keyId: key code of the keyboard key
-    // char: keyboard caharacter
-    // type: sound type (e.g. heater, clap, kick, etc...)
-    // clicked: boolean if the sound key is pressed or not
-    // plays sound if clicked == true
+    /* 
+      Information about each sound file/object
+        id: assigned sound id that is looked up if a sound is played
+        each button is assigned a unique id that corresponds to a sound
+        name: name of the sound (e.g. Heater-1)
+        keyId: key code of the keyboard key
+        char: keyboard caharacter
+        type: sound type (e.g. heater, clap, kick, etc...)
+        clicked: boolean if the sound key is pressed or not
+        plays sound if clicked == true 
+    */
     const soundInfo = data.map((item) => ({
       id: item.id - 1,
       name: item.name,
@@ -91,7 +91,7 @@ function App() {
         // Clone the audionode to allow the audio to be played multiple
         // times. There is a significant delay otherwise.
         const clone = item.cloneNode();
-        clone.volume = Number(volume);
+        clone.volume = volume * 1;
         clone.play();
       }
     });
@@ -192,11 +192,14 @@ function App() {
 
   return (
     <div
-      // tabIndex = -1 allows the user to play the drum-machine
-      // using keyboard keys without having to directly focus
-      // on the drum-machine itself
-      // E.g. play audio even when a mouse was clicked on
-      // the background area
+      /* 
+        tabIndex = -1 allows the user to play the drum-machine
+        using keyboard keys without having to directly focus
+         on the drum-machine itself
+         
+         E.g. play audio even when a mouse was clicked on
+         the background area 
+      */
       tabIndex={-1}
       className="app"
       ref={drumRef}

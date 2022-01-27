@@ -1,42 +1,49 @@
-.screen-on, .screen-off {
-    margin-top: 5%;
-    width: 60%;
-    height: 34%;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    background-color: #2f557b;
-    border: 4px solid #263f59;
-    font-family: Orbitron, sans-serif;
+.screen-on,
+.screen-off {
+  margin-top: 1.3em;
+  width: 60%;
+  height: 34%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #2f557b;
+  border: 4px solid #263f59;
+  font-family: Orbitron, sans-serif;
 }
 
 .screen-off {
-    background-color: #223243;
+  background-color: #223243;
 }
 
 .volume {
-    width: 100%;
-    margin-left: 3%;
-    font-size: .8em;
+  width: 100%;
+  margin-left: 1em;
+  font-size: 0.8em;
 }
 
-.fa-volume-up, .fa-volume-off {
-    padding-right: 8px;
-    color: white;
+.fa-volume-up,
+.fa-volume-off {
+  padding-right: 8px;
+  color: white;
 }
 
 .audio-name {
-    font-size: 17px;
-    animation-name: slide-in;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-timing-function: cubic-bezier(.41,0,.61,.99);
-    animation-fill-mode: forwards;
+  font-size: 17px;
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.41, 0, 0.61, 0.99);
+  animation-fill-mode: forwards;
 }
 
 @keyframes slide-in {
-    0% {letter-spacing: .8em;}
-    100% {letter-spacing: normal; opacity: 0;}
+  0% {
+    letter-spacing: 0.8em;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 0;
+  }
 }

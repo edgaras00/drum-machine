@@ -1,343 +1,361 @@
 :root {
+  --heater-bg: rgb(238, 0, 0);
+  --heater-box-shadow-color: rgb(223, 143, 138);
+  --heater-color: #0cfc08;
 
-    --heater-bg: rgb(238, 0, 0);
-    --heater-box-shadow-color: rgb(223, 143, 138);
-    --heater-color: #0cfc08;
+  --clap-bg: rgb(104, 97, 235);
+  --clap-box-shadow-color: rgb(145, 145, 206);
+  --clap-color: #e18d50;
 
-    --clap-bg: rgb(104, 97, 235);
-    --clap-box-shadow-color: rgb(145, 145, 206);
-    --clap-color: #e18d50; 
+  --off-bg: rgb(167, 164, 164);
+  --off-box-shadow-color: 0 3px rgb(215, 215, 215);
+  --off-color: rgb(116, 113, 113);
 
-    --off-bg: rgb(167, 164, 164);
-    --off-box-shadow-color: 0 3px rgb(215, 215, 215);
-    --off-color: rgb(116, 113, 113);
+  --open-hh-bg: #dcca09;
+  --open-hh-box-shadow-color: #fff265;
+  --open-hh-color: #d31fe3;
 
-    --open-hh-bg: #dcca09;
-    --open-hh-box-shadow-color: #fff265;
-    --open-hh-color: #d31fe3;
+  --closed-hh-bg: #d724de;
+  --closed-hh-box-shadow-color: #f179f5;
+  --closed-hh-color: #dedb24;
 
-    --closed-hh-bg: #d724de;
-    --closed-hh-box-shadow-color: #f179f5;
-    --closed-hh-color: #dedb24;
+  --side-stick-bg: #1df0aa;
+  --side-stick-box-shadow-color: #90ffda;
+  --side-stick-color: #f44e2d;
 
-    --side-stick-bg: #1df0aa;
-    --side-stick-box-shadow-color: #90ffda;
-    --side-stick-color: #f44e2d;
+  --snare-bg: #e97c1c;
+  --snare-box-shadow-color: #f9b376;
+  --snare-color: #1c38e9;
 
-    --snare-bg: #e97c1c;
-    --snare-box-shadow-color: #f9b376;
-    --snare-color: #1c38e9;
+  --chord-bg: rgb(98, 196, 206);
+  --chord-box-shadow-color: rgb(164, 213, 218);
+  --chord-color: #ce7f62;
 
-    --chord-bg: rgb(98, 196, 206);
-    --chord-box-shadow-color: rgb(164, 213, 218);
-    --chord-color: #ce7f62;
-
-    --shaker-bg: rgb(240, 61, 61);
-    --shaker-box-shadow-color: rgb(240, 142, 142);
-    --shaker-color: #3df03d;
+  --shaker-bg: rgb(240, 61, 61);
+  --shaker-box-shadow-color: rgb(240, 142, 142);
+  --shaker-color: #3df03d;
 }
 
-.drum-button, .off {
-    background: #4CAF50;
-    border: none;
-    border-radius: 8px;
-    height: 100px;
-    width: 100px;
-    font-size: 1.25em;
-    outline: none;
-    padding: .75em 2em;
-    position: relative;
-    text-transform: uppercase;
-    box-shadow: 0 3px rgb(47, 210, 52);
-    color: rgb(255, 224, 224);
-    font-weight: 500;
-    cursor: pointer
+.drum-button,
+.off {
+  background: #4caf50;
+  border: none;
+  border-radius: 8px;
+  height: 100px;
+  width: 100px;
+  font-size: 1.25em;
+  outline: none;
+  padding: 0.75em 2em;
+  position: relative;
+  text-transform: uppercase;
+  box-shadow: 0 3px rgb(47, 210, 52);
+  color: rgb(255, 224, 224);
+  font-weight: 500;
+  cursor: pointer;
 }
+/* 
+.drum-button-active,
+.off-active {
+  background: #4caf50;
+  border: none;
+  border-radius: 8px;
+  height: 100px;
+  width: 100px;
+  font-size: 1.25em;
+  outline: none;
+  transform: translateY(4px);
+  padding: 0.75em 2em;
+  position: relative;
+  text-transform: uppercase;
+  color: #af4e4c;
+  text-shadow: 0 0 15px #af4e4c;
+  box-shadow: 0 1px rgb(47, 210, 52);
+  font-weight: 700;
+} */
 
 .heater {
-    background: var(--heater-bg);
-    box-shadow: 0 3px var(--heater-box-shadow-color);
+  background: var(--heater-bg);
+  box-shadow: 0 3px var(--heater-box-shadow-color);
 }
 
 .clap {
-    background: var(--clap-bg);
-    box-shadow: 0 3px var(--clap-box-shadow-color);
+  background: var(--clap-bg);
+  box-shadow: 0 3px var(--clap-box-shadow-color);
 }
 
 .open-hh {
-    background: var(--open-hh-bg);
-    box-shadow: 0 3px var(--open-hh-box-shadow-color);
+  background: var(--open-hh-bg);
+  box-shadow: 0 3px var(--open-hh-box-shadow-color);
 }
 
 .closed-hh {
-    background: var(--closed-hh-bg);
-    box-shadow: 0 3px var(--closed-hh-box-shadow-color);
+  background: var(--closed-hh-bg);
+  box-shadow: 0 3px var(--closed-hh-box-shadow-color);
 }
 
 .side-stick {
-    background: var(--side-stick-bg);
-    box-shadow: 0 3px var(--side-stick-box-shadow-color);
+  background: var(--side-stick-bg);
+  box-shadow: 0 3px var(--side-stick-box-shadow-color);
 }
 
 .snare {
-    background: var(--snare-bg);
-    box-shadow: 0 3px var(--snare-box-shadow-color);
+  background: var(--snare-bg);
+  box-shadow: 0 3px var(--snare-box-shadow-color);
 }
 
 .chord {
-    background: var(--chord-bg);
-    box-shadow: 0 3px var(--chord-box-shadow-color);
+  background: var(--chord-bg);
+  box-shadow: 0 3px var(--chord-box-shadow-color);
 }
 
 .shaker {
-    background: var(--shaker-bg);
-    box-shadow: 0 3px var(--shaker-box-shadow-color);
+  background: var(--shaker-bg);
+  box-shadow: 0 3px var(--shaker-box-shadow-color);
 }
 
 .off {
-    background: var(--off-bg);
-    box-shadow: 0 3px var(--off-box-shadow-color);
-    color: var(--off-color);
+  background: var(--off-bg);
+  box-shadow: 0 3px var(--off-box-shadow-color);
+  color: var(--off-color);
 }
 
 .drum-button::before {
-    background: rgb(38, 220, 45);
-    border-radius: inherit;
-    content: '';
-    filter: blur(14px);
-    opacity: .75;
-    position: absolute;
-    transition: all .3s ease-in-out;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    z-index: -1;
+  background: rgb(38, 220, 45);
+  border-radius: inherit;
+  content: "";
+  filter: blur(14px);
+  opacity: 0.75;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .heater::before {
-    background: var(--heater-bg);
+  background: var(--heater-bg);
 }
 
 .clap::before {
-    background: var(--clap-bg);
+  background: var(--clap-bg);
 }
 
 .open-hh::before {
-    background: var(--open-hh-bg);
+  background: var(--open-hh-bg);
 }
 
 .closed-hh::before {
-    background: var(--closed-hh-bg);
+  background: var(--closed-hh-bg);
 }
 
 .side-stick::before {
-    background: var(--side-stick-bg);
+  background: var(--side-stick-bg);
 }
 
 .snare::before {
-    background: var(--snare-bg);
+  background: var(--snare-bg);
 }
 
 .chord::before {
-    background: var(--chord-bg);
+  background: var(--chord-bg);
 }
 
 .shaker::before {
-    background: var(--shaker-bg);
+  background: var(--shaker-bg);
 }
 
 .drum-button:active {
-    box-shadow: 0 1px;
-    transform: translateY(4px);
-    color: #af4e4c;
-    text-shadow: 0 0 15px #af4e4c;
-    font-weight: 700;
+  box-shadow: 0 1px;
+  transform: translateY(4px);
+  color: #af4e4c;
+  text-shadow: 0 0 15px #af4e4c;
+  font-weight: 700;
 }
 
 .off:active {
-    box-shadow: 0 1px var(--off-box-shadow-color);
-    transform: translateY(4px);
+  box-shadow: 0 1px var(--off-box-shadow-color);
+  transform: translateY(4px);
 }
 
 .heater:active {
-    color: var(--heater-color);
-    text-shadow: 0 0 15px var(--heater-color);
-    box-shadow: 0 1px var(--heater-box-shadow-color);
+  color: var(--heater-color);
+  text-shadow: 0 0 15px var(--heater-color);
+  box-shadow: 0 1px var(--heater-box-shadow-color);
 }
 
 .clap:active {
-    color: var(--clap-color);
-    text-shadow: 0 0 15px var(--clap-color);
-    box-shadow: 0 1px rgb(145, 145, 206);
+  color: var(--clap-color);
+  text-shadow: 0 0 15px var(--clap-color);
+  box-shadow: 0 1px rgb(145, 145, 206);
 }
 
 .open-hh:active {
-    color: var(--open-hh-color);
-    text-shadow: 0 0 15px var(--open-hh-color);
-    box-shadow: 0 1px var(--open-hh-box-shadow-color);
+  color: var(--open-hh-color);
+  text-shadow: 0 0 15px var(--open-hh-color);
+  box-shadow: 0 1px var(--open-hh-box-shadow-color);
 }
 
 .closed-hh:active {
-    color: var(--closed-hh-color);
-    text-shadow: 0 0 15px var(--closed-hh-color);
-    box-shadow: 0 1px var(--closed-hh-box-shadow-color);
+  color: var(--closed-hh-color);
+  text-shadow: 0 0 15px var(--closed-hh-color);
+  box-shadow: 0 1px var(--closed-hh-box-shadow-color);
 }
 
 .side-stick:active {
-    color: var(--side-stick-color);
-    text-shadow: 0 0 15px var(--side-stick-color);
-    box-shadow: 0 1px var(--side-stick-box-shadow-color);
+  color: var(--side-stick-color);
+  text-shadow: 0 0 15px var(--side-stick-color);
+  box-shadow: 0 1px var(--side-stick-box-shadow-color);
 }
 
 .snare:active {
-    color: var(--snare-color);
-    text-shadow: 0 0 15px var(--snare-color);
-    box-shadow: 0 1px var(--snare-box-shadow-color);
+  color: var(--snare-color);
+  text-shadow: 0 0 15px var(--snare-color);
+  box-shadow: 0 1px var(--snare-box-shadow-color);
 }
 
 .chord:active {
-    color: var(--chord-color);
-    text-shadow: 0 0 15px var(--chord-color);
-    box-shadow: 0 1px var(--chord-bg);
+  color: var(--chord-color);
+  text-shadow: 0 0 15px var(--chord-color);
+  box-shadow: 0 1px var(--chord-bg);
 }
 
 .shaker:active {
-    color: var(--shaker-color);
-    text-shadow: 0 0 15px var(--shaker-color);
-    box-shadow: 0 1px var(--shaker-bg);
+  color: var(--shaker-color);
+  text-shadow: 0 0 15px var(--shaker-color);
+  box-shadow: 0 1px var(--shaker-bg);
 }
 
 .drum-button:active::before {
-    filter: blur(28px);
+  filter: blur(28px);
 }
 
-.drum-button-active, 
+.drum-button-active,
 .off-active {
-    background: #4CAF50;
-    border: none;
-    border-radius: 8px;
-    height: 100px;
-    width: 100px;
-    font-size: 1.25em;
-    outline: none;
-    transform: translateY(4px);
-    padding: .75em 2em;
-    position: relative;
-    text-transform: uppercase;
-    color: #af4e4c;
-    text-shadow: 0 0 15px #af4e4c;
-    box-shadow: 0 1px rgb(47, 210, 52);
-    font-weight: 700;
+  background: #4caf50;
+  border: none;
+  border-radius: 8px;
+  height: 100px;
+  width: 100px;
+  font-size: 1.25em;
+  outline: none;
+  transform: translateY(4px);
+  padding: 0.75em 2em;
+  position: relative;
+  text-transform: uppercase;
+  color: #af4e4c;
+  text-shadow: 0 0 15px #af4e4c;
+  box-shadow: 0 1px rgb(47, 210, 52);
+  font-weight: 700;
 }
 
 .off-active {
-    background: var(--off-bg);
-    box-shadow: 0 1px var(--off-box-shadow-color);
-    color: var(--off-color);
-    text-shadow: none;
-    font-weight: 500;  
+  background: var(--off-bg);
+  box-shadow: 0 1px var(--off-box-shadow-color);
+  color: var(--off-color);
+  text-shadow: none;
+  font-weight: 500;
 }
 
 .heater-active {
-    background: var(--heater-bg);
-    color: var(--heater-color);
-    text-shadow: 0 0 15px var(--heater-color);
-    box-shadow: 0 1px var(--heater-box-shadow-color);
+  background: var(--heater-bg);
+  color: var(--heater-color);
+  text-shadow: 0 0 15px var(--heater-color);
+  box-shadow: 0 1px var(--heater-box-shadow-color);
 }
 
 .clap-active {
-    background: var(--clap-bg);
-    color: var(--clap-color);
-    text-shadow: 0 0 15px var(--clap-color);
-    box-shadow: 0 1px var(--clap-box-shadow-color);
+  background: var(--clap-bg);
+  color: var(--clap-color);
+  text-shadow: 0 0 15px var(--clap-color);
+  box-shadow: 0 1px var(--clap-box-shadow-color);
 }
 
 .open-hh-active {
-    background: var(--open-hh-bg);
-    color: var(--open-hh-color);
-    text-shadow: 0 0 15px var(--open-hh-color);
-    box-shadow: 0 1px var(--open-hh-box-shadow-color);
+  background: var(--open-hh-bg);
+  color: var(--open-hh-color);
+  text-shadow: 0 0 15px var(--open-hh-color);
+  box-shadow: 0 1px var(--open-hh-box-shadow-color);
 }
 
 .closed-hh-active {
-    background: var(--closed-hh-bg);
-    color: var(--closed-hh-color);
-    text-shadow: 0 0 15px var(--closed-hh-color);
-    box-shadow: 0 1px var(--closed-hh-box-shadow-color);
+  background: var(--closed-hh-bg);
+  color: var(--closed-hh-color);
+  text-shadow: 0 0 15px var(--closed-hh-color);
+  box-shadow: 0 1px var(--closed-hh-box-shadow-color);
 }
 
 .side-stick-active {
-    background: var(--side-stick-bg);
-    color: var(--side-stick-color);
-    text-shadow: 0 0 15px var(--side-stick-color);
-    box-shadow: 0 1px var(--side-stick-box-shadow-color);
+  background: var(--side-stick-bg);
+  color: var(--side-stick-color);
+  text-shadow: 0 0 15px var(--side-stick-color);
+  box-shadow: 0 1px var(--side-stick-box-shadow-color);
 }
 
 .snare-active {
-    background: var(--snare-bg);
-    color: var(--snare-color);
-    text-shadow: 0 0 15px var(--snare-color);
-    box-shadow: 0 1px var(--snare-box-shadow-color);
+  background: var(--snare-bg);
+  color: var(--snare-color);
+  text-shadow: 0 0 15px var(--snare-color);
+  box-shadow: 0 1px var(--snare-box-shadow-color);
 }
 
 .chord-active {
-    background: var(--chord-bg);
-    color: var(--chord-color);
-    text-shadow: 0 0 15px var(--chord-color);
-    box-shadow: 0 1px var(--chord-color);
+  background: var(--chord-bg);
+  color: var(--chord-color);
+  text-shadow: 0 0 15px var(--chord-color);
+  box-shadow: 0 1px var(--chord-color);
 }
 
 .shaker-active {
-    background: var(--shaker-bg);
-    color: var(--shaker-color);
-    text-shadow: 0 0 15px var(--shaker-color);
-    box-shadow: 0 1px var(--shaker-color);
+  background: var(--shaker-bg);
+  color: var(--shaker-color);
+  text-shadow: 0 0 15px var(--shaker-color);
+  box-shadow: 0 1px var(--shaker-color);
 }
 
 .drum-button-active::before {
-    background: rgb(38, 220, 45);
-    content: '';
-    opacity: .75;
-    position: absolute;
-    transition: all .3s ease-in-out;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    filter: blur(28px);
-    z-index: -1;
+  background: rgb(38, 220, 45);
+  content: "";
+  opacity: 0.75;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  filter: blur(28px);
+  z-index: -1;
 }
 
 .heater-active::before {
-    background: var(--heater-bg);
+  background: var(--heater-bg);
 }
 
 .clap-active::before {
-    background: var(--clap-bg);
+  background: var(--clap-bg);
 }
 
 .open-hh-active::before {
-    background: var(--open-hh-bg);
+  background: var(--open-hh-bg);
 }
 
 .closed-hh-active::before {
-    background: var(--closed-hh-bg);
+  background: var(--closed-hh-bg);
 }
 
 .side-stick-active::before {
-    background: var(--side-stick-bg);
+  background: var(--side-stick-bg);
 }
 
 .snare-active::before {
-    background: var(--snare-bg);
+  background: var(--snare-bg);
 }
 
 .chord-active::before {
-    background: var(--chord-bg);
+  background: var(--chord-bg);
 }
 
 .shaker-active::before {
-    background: var(--shaker-bg);
+  background: var(--shaker-bg);
 }
-
