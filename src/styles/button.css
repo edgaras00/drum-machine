@@ -43,9 +43,9 @@
   border-radius: 8px;
   height: 100px;
   width: 100px;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   outline: none;
-  padding: 0.75em 2em;
+  padding: 0.75rem 2rem;
   position: relative;
   text-transform: uppercase;
   box-shadow: 0 3px rgb(47, 210, 52);
@@ -53,25 +53,6 @@
   font-weight: 500;
   cursor: pointer;
 }
-/* 
-.drum-button-active,
-.off-active {
-  background: #4caf50;
-  border: none;
-  border-radius: 8px;
-  height: 100px;
-  width: 100px;
-  font-size: 1.25em;
-  outline: none;
-  transform: translateY(4px);
-  padding: 0.75em 2em;
-  position: relative;
-  text-transform: uppercase;
-  color: #af4e4c;
-  text-shadow: 0 0 15px #af4e4c;
-  box-shadow: 0 1px rgb(47, 210, 52);
-  font-weight: 700;
-} */
 
 .heater {
   background: var(--heater-bg);
@@ -238,10 +219,10 @@
   border-radius: 8px;
   height: 100px;
   width: 100px;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   outline: none;
   transform: translateY(4px);
-  padding: 0.75em 2em;
+  padding: 0.75rem 2rem;
   position: relative;
   text-transform: uppercase;
   color: #af4e4c;

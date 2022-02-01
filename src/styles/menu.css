@@ -1,6 +1,7 @@
 .menu {
   width: 84%;
-  height: 30%;
+  /* height: 30%; */
+  height: 168px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
