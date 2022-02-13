@@ -90,9 +90,11 @@ function App() {
       if (id === index) {
         // Clone the audionode to allow the audio to be played multiple
         // times. There is a significant delay otherwise.
-        const clone = item.cloneNode();
-        clone.volume = volume * 1;
-        clone.play();
+        // const clone = item.cloneNode();
+        // clone.volume = volume * 1;
+        // clone.play();
+        item.currentTime = 0;
+        item.play();
       }
     });
     // Toggle state is being changed everytime to force
