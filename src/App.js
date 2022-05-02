@@ -94,6 +94,7 @@ function App() {
         // clone.volume = volume * 1;
         // clone.play();
         item.currentTime = 0;
+        item.volume = volume * 1;
         item.play();
       }
     });
