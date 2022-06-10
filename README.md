@@ -1,5 +1,5 @@
 # Drum Machine
-<img src="docs/main.png" width="600px">
+<img src="public/docs/main.png" width="600px">
 Front end drum machine app
 <br/>
 <br/>
